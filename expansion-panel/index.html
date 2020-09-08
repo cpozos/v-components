@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test components</title>
+
+    <!-- General CSS -->
+
+    <!--Vue js-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--Components' files-->
+    <script src="expansion-panel-section.js"></script>
+    <link rel="stylesheet" href="expansion-panel-section.css">
+
+</head>
+<body>
+    
+    <div id="app"> 
+        
+        <div class="div-expansion-panel-container">
+
+            <expansion-panel-section label="Section1">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus praesentium exercitationem odio! Nihil nostrum nam vel ea quos aut, tempore quaerat voluptates culpa vitae totam, provident nulla optio autem?
+                </p>
+            </expansion-panel-section>
+
+            <expansion-panel-section label="Section2">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus praesentium exercitationem odio! Nihil nostrum nam vel ea quos aut, tempore quaerat voluptates culpa vitae totam, provident nulla optio autem?
+                </p>
+            </expansion-panel-section>
+
+            <expansion-panel-section label="Section3">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit minus praesentium exercitationem odio! Nihil nostrum nam vel ea quos aut, tempore quaerat voluptates culpa vitae totam, provident nulla optio autem?
+                </p>
+            </expansion-panel-section>
+
+            <expansion-panel-section label="Section4">
+                <div class="table-container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Etiqueta</th>
+                                <th>Color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="slice in slices">
+                                <td>{{slice.label}}</td>
+                                <td v-bind:style="{backgroundColor: slice.color}">{{slice.color}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </expansion-panel-section>
+    
+        </div>
+    
+    </div>
+
+    <script>
+        var Vue = new Vue({
+            el: "#app"
+        });
+    </script>
+
+</body>
+</html>
