@@ -58,4 +58,4 @@ It is a component that allows you to hide and show (toggling betwen them) html c
   </div>
   ```
   
-  Notice, a Vue object (app) must exist and the *expansion-panel-section* receives label property and html can be write inside this tag.
+  Notice, a Vue object (app) must exist and the *expansion-panel-section* receives label property and html can be written inside this tag.
