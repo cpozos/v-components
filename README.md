@@ -4,9 +4,9 @@
 This project is intended to provide components created using Vue.js without CLI
 
 ## Table of components
-* [Expansion panel](#expansion-panel)
+* [Expansion panel](#expansion-panel-)
 
-## Expansion panel <a href="expansion-panel"></a>
+## Expansion panel <a href="expansion-panel-"></a>
 It is a component that allows you to hide and show (toggling betwen them) html content.
 
 <image src="doc/images/expansion-panel.PNG" witdh="100%"/>
