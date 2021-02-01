@@ -1,4 +1,4 @@
-# v-components
+# Vue Components
 
 ## General info
 This project is intended to provide components created using Vue.js without CLI
